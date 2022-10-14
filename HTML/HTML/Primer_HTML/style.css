@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    color:darkorchid;
+}
+li {
+    list-style: none;
+    color: inherit;
+}
+/* img {
+    width: 100px;
+    height: 100px;
+} */
+
+header {
+    padding: 10px;
+    background-color: red;
+}
+header ul{
+    text-align: right;
+    display: inline;
+    width: 60%;
+    
+}
+header h1{
+    text-align: left;
+    display: inline;
+    width: 30%;
+    padding-left: 10px;
+}
+header ul {
+    padding-left: 40%;
+    padding-right: 0%;
+}
+header li{
+    display: inherit;
+}
+header li::after{
+    content: " | ";
+}
+main {
+    color:bisque;
+}
+main h1 {
+    color:inherit;
+}
+main h2{
+    color: inherit;
+}
+main a:hover{
+    color:cyan;
+}
+.card{
+    width: 100px;
+    height: 100px;
+}
+.card img.image-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+  }
+.card:hover {
+    opacity: 1;
+}
+
