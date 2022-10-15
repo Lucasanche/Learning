@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace First_Web_App
+{
+    public partial class WebForm1 : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            txtNombre.BackColor = System.Drawing.Color.LightGray;
+        }
+
+        protected void btnAceptar_Click(object sender, EventArgs e)
+        {
+            string name = txtNombre.Text;
+            lblSaludo.Text = $"Hola {name}";
+        }
+
+    }
+}
